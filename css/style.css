@@ -65,11 +65,115 @@ body{margin:0px; padding:0px; background:#fff; color:#060506; font-family: 'Robo
 
 img{ border:0px;}
        
- 
-	   
 
+.step-img{
+    height: auto;
+    width: 100%;
+    max-width: 53px;
+    max-height: 56px;
+}
+.steps-body .step:not(:last-child):after {
+    content: "";
+    height: 14px;
+    width: 80%;
+    margin: 0 auto;
+    background-image: url(../images/arrow-right.svg);
+    position: absolute;
+    right: -40%;
+    top: 25px;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}	   
+@media (max-width:991px){
+    .thankyouheaderbg{
+        background-image: none;
+        background-color: rgba(129, 129, 129, 0.1);  
+    }
+    .steps-body .step:not(:last-child):after{
+        display: none;
+    }
+    .step {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+                align-items: center;
+    } 
+    .step-body{
+        padding-left: 30px;
+    }
+    .step-title, .step-content{
+        text-align: left;
+    }
+    .step:not(:last-child):before{
+        content: "";
+        height: 14px;
+        width: 70px;
+        margin: 0 auto;
+        background-image: url(../images/arrow-right.svg);
+        position: absolute;
+        left: 7px;
+        top: 90%;
+        z-index: -1;
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: contain;
+        transform: rotate(90deg);
+    }
+}
 
-
-	   
-       
+.come-inside{
+    background-color: rgba(129, 129, 129, 0.1);
+    padding: 50px 15px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    color: #3d3d3d;
+}
+.title-come-inside {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 3.79px;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+.subtitle-come-inside {
+    font-size: 1.9rem;
+    letter-spacing: 2.9px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.form-come-inside {
+    margin-top: 30px;
+}
+.input.email-come-inside {
+    max-width: 360px;
+    width: 100%;
+    border-radius: 6px;
+    padding-left: 16px;
+    outline: none;
+    color: #818181;
+}
+.btn.lima.btn-send {
+    max-width: 360px;
+    border-radius: 6px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    outline: none;
+    font-size:12px;
+}	   
+.container-fluid.footer {
+    background-color: #4fd1a8;
+    padding: 25px 15px;
+}
+.social-share-footer {
+    margin-bottom: 0px;
+}
+.social-share-footer a {
+    text-align: center;
+    width: 60px;
+    display: inline-block;
+}
  
